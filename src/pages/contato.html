@@ -9,44 +9,52 @@
 </head>
 
 <body>
+
     <header>
         <h1 id="logo">Projeto</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../../index.html">Home</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
                 <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./localiza.html">Localiza</a></li>
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main id="container-contato">
         <div class="contato">
             <form class="form" id="form">
                 <article class="control">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
-                    <i class="error"><img src="../assets/erro.svg" </i>
-                        <small>Erro</small>
+                    <input type="text" name="nome" id="nome" >
+                    <i class="error"><img src="../assets/erro.svg"></i>
+                    <small>Erro</small>
                 </article>
+
                 <article class="control">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <i class="error"><img src="../assets/erro.svg" </i>
-                        <small>Erro</small>
+                    <input type="email" name="email" id="email">
+                    <i class="error"><img src="../assets/erro.svg"></i>
+                    <small>Erro</small>
                 </article>
+
                 <article class="control">
                     <label for="descricao">Descrição</label>
-                    <textarea type="text" name="descricao" id="descricao">
-                <small>Erro</small>
-            </article>
+                    <textarea type="text" name="descricao" id="descricao"></textarea>
+                    <i class="error"><img src="../assets/erro.svg"></i>
+                    <small>Erro</small>
+                </article>
 
-            <button type="submit" onclick="enviar()">Enviar</button>"
-        </form>
-    </div>
+                <button type="submit" onclick="validar()">Enviar</button>
 
-</main>
-    <h1>Contato</h1>
+            </form>
+
+        </div>
+
+    </main>
+
     <script src="../js/contato.js"></script>
 </body>
 </html>
